@@ -1,0 +1,377 @@
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+C:\Users\admin\source\repos\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.dll
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.xml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.xml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.baml
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Form1.resources
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.g.cs
+\\Mac\Home\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.xml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.xml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.xml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.xml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.baml
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Form1.resources
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+F:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.xml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.xml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.xml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.xml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.baml
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Form1.resources
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+E:\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.xml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.xml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.xml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.manifest
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.application
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe.manifest
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.application
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\adminWin.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\adminWin.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\kAdd.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\kAdd.g.cs
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\stavkaWin.baml
+C:\Users\5element\Desktop\ЛЮБИМАЯ КУРСОВА КПИЯП\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\stavkaWin.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.config
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe.manifest
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.application
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\БК_СПОРТЛАЙН.pdb
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\Castle.Core.xml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.xml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\FakeItEasy.xml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignColors.pdb
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csprojAssemblyReference.cache
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\kAdd.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\stavkaWin.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\adminWin.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\kAdd.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\stavkaWin.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window10.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window11.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window6.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window7.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window8.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window9.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangeEmail.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowChangePassword.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.g.cs
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.cache
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН_MarkupCompile.lref
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\App.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\adminWin.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\glavnoeWindow.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\MainWindow.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window1.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\whellWin.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSlott.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window2.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window3.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window4.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\Window5.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\WindowSport.baml
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.g.resources
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.Properties.Resources.resources
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.GenerateResource.cache
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CoreCompileInputs.cache
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe.manifest
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.application
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.csproj.CopyComplete
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.exe
+C:\Users\5element\Desktop\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\БК_СПОРТЛАЙН\obj\Debug\БК_СПОРТЛАЙН.pdb

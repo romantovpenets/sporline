@@ -1,0 +1,1521 @@
+﻿<Window x:Class="БК_СПОРТЛАЙН.whellWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:БК_СПОРТЛАЙН"
+        mc:Ignorable="d"
+        Title="Window1" Height="880" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True"  >
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <Border Name="newBorder" CornerRadius="30" Opacity="1">
+                <Border.Background>
+                    <ImageBrush ImageSource="depositphotos_24039343-stock-photo-casino-green-background.jpg"/>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--Заголовок-->
+
+                    <!--Основное содержание-->
+                    <Border Grid.Row="1">
+                        <AdornerDecorator>
+                            <ContentPresenter />
+                        </AdornerDecorator>
+                    </Border>
+                    <!--Элемент захвата и изменения размера - работает только для прямоугольных окон-->
+                    <ResizeGrip Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                            Visibility="Collapsed" IsTabStop="False" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
+    <Grid x:Name="g1" HorizontalAlignment="Left" Height="858" Margin="51,-88,0,0" VerticalAlignment="Top" Width="405">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" Height="782" VerticalAlignment="Top" Width="408" CornerRadius="10" Margin="-28,110,0,-34" Cursor="Arrow" Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="depositphotos_25358025-stock-photo-green-poker-background.jpg" Opacity="0.7"/>
+            </Border.Background>
+        </Border>
+        <Border x:Name="b_ch" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="-18,122,0,0" VerticalAlignment="Top" Width="70" Background="#BF000000" Cursor="Hand" PreviewMouseLeftButtonDown="b_ch_PreviewMouseLeftButtonDown_1"/>
+        <Border x:Name="b_k" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="340" Margin="-18,478,0,0" VerticalAlignment="Top" Width="70" Background="#BFF30D0D" Cursor="Hand" PreviewMouseLeftButtonDown="b_k_PreviewMouseLeftButtonDown" Grid.RowSpan="2"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="309,122,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="4" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" Padding="0,0,4,0" Background="#99FF0000" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_1"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,122,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_3">
+            <Label Content="3" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" Padding="0,0,4,0" Background="#7F000000" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_4"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="60,122,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_4">
+            <Label Content="1" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_3"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="142,122,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_5">
+            <Label Content="2" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_2"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="60,200,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="5" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FD0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_5"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="142,200,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="6" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Height="58" VerticalAlignment="Top" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_6"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,200,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="7" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_7"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="309,200,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="8" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" Padding="0,0,4,0" Background="#7F000000" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_8"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="60,280,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="9" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_9"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="142,280,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="10" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_10"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,280,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="11" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" Padding="0,0,4,0" Background="#7F000000" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_11"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,280,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="12" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_12"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,356,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="16" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7C000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_16"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,356,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="15" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_15"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="60,356,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="13" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_13"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="142,356,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="14" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_14"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="62,434,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="17" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_17"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="144,434,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="18" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_18"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,434,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="19" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#72000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_19"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,434,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="20" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_20"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="62,516,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="21" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_21"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="144,516,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="22" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_22"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,516,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="23" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_23"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,516,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="24" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_24"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,598,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="28" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_28"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,598,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="27" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7C000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_27"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="62,598,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="25" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7E000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_25"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="144,598,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand">
+            <Label Content="26" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_26"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="62,676,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.RowSpan="2">
+            <Label Content="29" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#DDFFFFFF" Padding="0,0,4,0" Background="#99FF0000" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_29"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="144,676,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.RowSpan="2">
+            <Label Content="30" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_30"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,676,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.RowSpan="2">
+            <Label Content="31" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_31"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,676,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.RowSpan="2">
+            <Label Content="32" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_32"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="62,76,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.Row="1">
+            <Label Content="33" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_33"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="144,76,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.Row="1">
+            <Label Content="34" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_34"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="224,76,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.Row="1">
+            <Label Content="35" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#7F000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_35"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="308,76,0,0" VerticalAlignment="Top" Width="60" Cursor="Hand" Grid.Row="1">
+            <Label Content="36" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_36"/>
+        </Border>
+        <Border x:Name="bb" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="141" CornerRadius="10" Margin="-20,220,0,-100" Background="#B2000000" Grid.Row="1" PreviewMouseLeftButtonDown="bb_PreviewMouseLeftButtonDown">
+            <Label Content="Выход" Foreground="#DDFFFFFF" FontSize="32" Margin="-4,-1,-1,2" Height="53" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown"/>
+        </Border>
+
+
+        <Border x:Name="n2_2" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="507,113,-167,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n2" Content="2" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="1,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n3_3" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="577,113,-237,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n3" Content="3" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="1,1,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n4_4" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="647,113,-307,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n4" Content="4" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n5_5" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="717,113,-377,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n5" Content="5" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border  x:Name="n6_6" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="787,113,-447,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n6" Content="6" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n7_7" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="857,113,-517,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n7" Content="7" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n8_8" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="927,113,-587,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n8" Content="8" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n9_9" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="64" Margin="997,113,-657,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n9" Content="9" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0"/>
+        </Border>
+        <Border x:Name="n10_10" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,113,-726,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n10" Content="10" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n27_27" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="506,71,-166,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n27" Content="27" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="1,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n26_26" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="576,71,-236,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n26" Content="26" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="1,1,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n25_25" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="646,71,-306,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label x:Name="n25" Content="25" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n24_24" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="716,71,-376,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label x:Name="n24" Content="24" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n23_23" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="786,71,-446,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n23" Content="23" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n22_22" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="856,71,-516,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n22"  Content="22" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n21_21" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="926,71,-586,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n21"  Content="21" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n20_20" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="996,71,-656,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label  x:Name="n20"  Content="20" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n19_19"  BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,71,-726,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label x:Name="n19"  Content="19" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,1,0,0" Height="62"/>
+        </Border>
+        <Border x:Name="n11_11" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,184,-726,0" VerticalAlignment="Top" Width="65">
+            <Label  x:Name="n11"  Content="11" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n12_12" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,255,-726,0" VerticalAlignment="Top" Width="65">
+            <Label  x:Name="n12" Content="12" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n13_13" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,326,-726,0" VerticalAlignment="Top" Width="65">
+            <Label   x:Name="n13"  Content="13" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border  x:Name="n14_14" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,397,-726,0" VerticalAlignment="Top" Width="65">
+            <Label   x:Name="n14"  Content="14" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n15_15" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,468,-726,0" VerticalAlignment="Top" Width="65">
+            <Label  x:Name="n15"  Content="15" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n16_16" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="67" Margin="1066,540,-726,0" VerticalAlignment="Top" Width="65">
+            <Label   x:Name="n16" Content="16" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border  x:Name="n17_17" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,611,-726,0" VerticalAlignment="Top" Width="65">
+            <Label   x:Name="n17"  Content="17" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border  x:Name="n18_18" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="1066,0,-726,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label   x:Name="n18" Content="18" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n1_1" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,113,-96,0" VerticalAlignment="Top" Width="65">
+            <Label   x:Name="n1" Content="1" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n28_28" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,70,-96,0" VerticalAlignment="Top" Width="65" Grid.Row="1">
+            <Label   x:Name="n28"  Content="28" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,1,0,0" Height="62"/>
+        </Border>
+        <Border x:Name="n36_36" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,184,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n36" Content="36" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n35_35" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,255,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n35" Content="35" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n34_34" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,326,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n34" Content="34" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n33_33" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,397,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n33" Content="33" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border  x:Name="n32_32" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,467,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n32" Content="32" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n31_31" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,539,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n31" Content="31" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n30_30" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,610,-96,0" VerticalAlignment="Top" Width="65">
+            <Label x:Name="n30" Content="30" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99000000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border x:Name="n29_29" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="65" Margin="436,681,-96,0" VerticalAlignment="Top" Width="65" Grid.RowSpan="2">
+            <Label x:Name="n29" Content="29" FontSize="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="0,0,0,1" Width="65" Height="65"/>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="725" Margin="426,103,-734,0" VerticalAlignment="Top" Width="713" Panel.ZIndex="-3" CornerRadius="10" Grid.RowSpan="2" Cursor="Arrow">
+            <Border.BorderBrush>
+                <SolidColorBrush Color="White" Opacity="10"/>
+            </Border.BorderBrush>
+            <Border.Background>
+                <ImageBrush ImageSource="depositphotos_25358025-stock-photo-green-poker-background.jpg"/>
+            </Border.Background>
+            <Label x:Name="l_summavin" Content="2000 BYN" Margin="-1,500,-1,94" FontSize="60" Foreground="#FF70DE7A" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Hidden">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+        </Border>
+        <Border x:Name="b1" BorderThickness="1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="182" Margin="926,165,-703,-67" CornerRadius="10" Background="#B2000000" Cursor="Hand" Grid.Row="1" BorderBrush="White" PreviewMouseLeftButtonDown="b1_PreviewMouseLeftButtonDown">
+            <Label Content="ИГРАТЬ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="78" Width="182" Foreground="#DDFFFFFF" FontSize="33" Margin="-1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Border>
+        <Label Content="Сумма ставки" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="521,154,-318,-32" Height="54" Width="202" FontSize="22" Background="{x:Null}" Foreground="#DDFFFFFF" Grid.Row="1">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Border x:Name="b1_Copy" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="281" Margin="454,192,-330,-94" CornerRadius="10" Background="#B2000000" Cursor="Hand" Grid.Row="1"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="92" Margin="638,198,-325,-89" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="92" Margin="552,197,-239,-89" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="92" Margin="460,197,-147,-89" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s1" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="59" Margin="476,202,-130,-84" CornerRadius="70" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_2" Cursor="Hand" Background="#02000000" Grid.Row="1"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="59" Margin="568,202,-222,-84" CornerRadius="70" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_1" Cursor="Hand" Background="#02000000" Grid.Row="1"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="59" Margin="653,202,-307,-84" CornerRadius="70" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown" Cursor="Hand" Background="#02000000" Grid.Row="1"/>
+        <Label Content="Баланс:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="926,243,-723,-121" Height="54" Width="202" FontSize="24" Background="{x:Null}" Foreground="#DDFFFFFF" Grid.Row="1">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="balance1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1026,243,-715,-121" Height="54" Width="94" FontSize="24" Background="{x:Null}" Foreground="#DDFFFFFF" Grid.Row="1">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Border x:Name="b_20_33" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,77,0,0" PreviewMouseLeftButtonDown="b_20_33_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s2" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_34" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,77,0,0" PreviewMouseLeftButtonDown="b_20_34_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s3" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_35" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,79,0,0" PreviewMouseLeftButtonDown="b_20_35_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s4" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_36" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,80,0,0" PreviewMouseLeftButtonDown="b_20_36_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.Row="1">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s5" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_32" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,677,0,0" PreviewMouseLeftButtonDown="b_20_32_PreviewMouseLeftButtonDown" Cursor="Hand" Grid.RowSpan="2" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s6" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_31" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,677,0,0" PreviewMouseLeftButtonDown="b_20_31_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s7" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_30" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,677,0,0" PreviewMouseLeftButtonDown="b_20_30_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s8" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_29" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,677,0,0" PreviewMouseLeftButtonDown="b_20_29_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s9" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_25" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,600,0,0" PreviewMouseLeftButtonDown="b_20_25_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s10" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_26" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,600,0,0" PreviewMouseLeftButtonDown="b_20_26_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s11" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_27" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,600,0,0" PreviewMouseLeftButtonDown="b_20_27_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s12" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_28" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,600,0,0" PreviewMouseLeftButtonDown="b_20_28_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s13" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_24" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,518,0,0" PreviewMouseLeftButtonDown="b_20_24_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s14" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_22" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,517,0,0" PreviewMouseLeftButtonDown="b_20_22_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s15" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_21" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,517,0,0" PreviewMouseLeftButtonDown="b_20_21_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s16" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_17" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,436,0,0" PreviewMouseLeftButtonDown="b_20_17_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s17" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_18" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,436,0,0" PreviewMouseLeftButtonDown="b_20_18_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s18" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_19" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,436,0,0" PreviewMouseLeftButtonDown="b_20_19_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s19" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_20" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,436,0,0" PreviewMouseLeftButtonDown="b_20_20_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s20" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_16" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,357,0,0" PreviewMouseLeftButtonDown="b_20_16_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s21" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_23" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,517,0,0" PreviewMouseLeftButtonDown="b_20_23_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s22" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_15" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,357,0,0" PreviewMouseLeftButtonDown="b_20_15_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s23" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_14" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,357,0,0" PreviewMouseLeftButtonDown="b_20_14_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s24" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_13" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,357,0,0" PreviewMouseLeftButtonDown="b_20_13_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s25" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_9" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="49,282,0,0" PreviewMouseLeftButtonDown="b_20_9_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s26" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_10" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,282,0,0" PreviewMouseLeftButtonDown="b_20_10_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s27" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_11" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,282,0,0" PreviewMouseLeftButtonDown="b_20_11_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s28" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_7" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,200,0,0" PreviewMouseLeftButtonDown="b_20_7_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s29" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_6" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,200,0,0" PreviewMouseLeftButtonDown="b_20_6_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s30" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_5" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,201,0,0" PreviewMouseLeftButtonDown="b_20_5_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s31" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_1" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,123,0,0" RenderTransformOrigin="0.623,0.466" Cursor="Hand" PreviewMouseLeftButtonDown="b_20_1_PreviewMouseLeftButtonDown_1" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s32" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_2" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,123,0,0" RenderTransformOrigin="0.623,0.466" PreviewMouseLeftButtonDown="b_20_2_PreviewMouseLeftButtonDown_1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s33" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_3" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,123,0,0" RenderTransformOrigin="0.623,0.466" PreviewMouseLeftButtonDown="b_20_3_PreviewMouseLeftButtonDown_1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s34" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_4" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,123,0,0" RenderTransformOrigin="0.623,0.466" PreviewMouseLeftButtonDown="b_20_4_PreviewMouseLeftButtonDown_1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s35" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_8" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,201,0,0" RenderTransformOrigin="0.623,0.466" PreviewMouseLeftButtonDown="b_20_8_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s36" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_20_12" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,282,0,0" RenderTransformOrigin="0.623,0.466" PreviewMouseLeftButtonDown="b_20_12_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s37" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b20_k" BorderThickness="1" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="92" Margin="-27,622,0,0" PreviewMouseLeftButtonDown="b20_k_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden" Grid.RowSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s38" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b20_ch" BorderThickness="1" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="92" Margin="-27,252,0,0" PreviewMouseLeftButtonDown="Border_PreviewMouseLeftButtonDown_6" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG5.png"/>
+            </Border.Background>
+            <Border x:Name="b_s39" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_36" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,78,0,0" PreviewMouseLeftButtonDown="b_50_36_PreviewMouseLeftButtonDown" Grid.Row="1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s1" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_32" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,677,0,0" PreviewMouseLeftButtonDown="b_50_32_PreviewMouseLeftButtonDown" Grid.RowSpan="2" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s2" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_28" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,599,0,0" PreviewMouseLeftButtonDown="b_50_28_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s3" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_27" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,599,0,0" PreviewMouseLeftButtonDown="b_50_27_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s4" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_31" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,678,0,0" PreviewMouseLeftButtonDown="b_50_31_PreviewMouseLeftButtonDown" Grid.RowSpan="2" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s5" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_35" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,77,0,0" PreviewMouseLeftButtonDown="b_50_35_PreviewMouseLeftButtonDown" Grid.Row="1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s6" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_34" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,78,0,0" PreviewMouseLeftButtonDown="b_50_34_PreviewMouseLeftButtonDown" Grid.Row="1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s7" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_30" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,678,0,0" PreviewMouseLeftButtonDown="b_50_30_PreviewMouseLeftButtonDown" Grid.RowSpan="2" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s8" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_26" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,599,0,0" PreviewMouseLeftButtonDown="b_50_26_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s9" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_22" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,517,0,0" PreviewMouseLeftButtonDown="b_50_22_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s10" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_23" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,518,0,0" PreviewMouseLeftButtonDown="b_50_23_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s11" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_24" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,517,0,0" PreviewMouseLeftButtonDown="b_50_24_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s12" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_20" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,435,0,0" PreviewMouseLeftButtonDown="b_50_20_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s13" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_16" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,357,0,0" PreviewMouseLeftButtonDown="b_50_16_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s14" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_12" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,281,0,0" PreviewMouseLeftButtonDown="b_50_12_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s15" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_8" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,200,0,0" PreviewMouseLeftButtonDown="b_50_8_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s16" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_4" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,122,0,0" PreviewMouseLeftButtonDown="b_50_4_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s17" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_3" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,122,0,0" PreviewMouseLeftButtonDown="b_50_3_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s18" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_7" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,200,0,0" PreviewMouseLeftButtonDown="b_50_7_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s19" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_11" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,281,0,0" PreviewMouseLeftButtonDown="b_50_11_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s20" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_15" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,357,0,0" PreviewMouseLeftButtonDown="b_50_15_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s21" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_19" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,435,0,0" PreviewMouseLeftButtonDown="b_50_19_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s22" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_18" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,435,0,0" PreviewMouseLeftButtonDown="b_50_18_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s23" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_17" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,435,0,0" PreviewMouseLeftButtonDown="b_50_17_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s24" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_21" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,517,0,0" PreviewMouseLeftButtonDown="b_50_21_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s25" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_25" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,600,0,0" PreviewMouseLeftButtonDown="b_50_25_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s26" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_29" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,677,0,0" PreviewMouseLeftButtonDown="b_50_29_PreviewMouseLeftButtonDown" Grid.RowSpan="2" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s27" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_33" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,78,0,0" PreviewMouseLeftButtonDown="b_50_33_PreviewMouseLeftButtonDown" Grid.Row="1" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s28" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_13" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,357,0,0" PreviewMouseLeftButtonDown="b_50_13_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s29" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_14" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,357,0,0" PreviewMouseLeftButtonDown="b_50_14_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s30" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_10" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,281,0,0" PreviewMouseLeftButtonDown="b_50_10_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s31" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_9" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="49,281,0,0" PreviewMouseLeftButtonDown="b_50_9_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s32" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_5" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,200,0,0" PreviewMouseLeftButtonDown="b_50_5_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s33" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_6" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,201,0,0" PreviewMouseLeftButtonDown="b_50_6_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s34" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_2" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,122,0,0" PreviewMouseLeftButtonDown="b_50_2_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s35" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_50_1" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,122,0,0" PreviewMouseLeftButtonDown="b_50_1_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s36" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b50_ch" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="-23,260,0,0" PreviewMouseLeftButtonDown="b50_ch_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s37" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b50_k" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="-23,618,0,0" PreviewMouseLeftButtonDown="b50_k_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker-chips-png-13.png"/>
+            </Border.Background>
+            <Border x:Name="b2_s38" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4" Cursor="Hand" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_36" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,77,0,0" Grid.Row="1" PreviewMouseLeftButtonDown="b_100_36_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s1" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_35" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,76,0,0" Grid.Row="1" PreviewMouseLeftButtonDown="b_100_35_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s2" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_34" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,77,0,0" Grid.Row="1" PreviewMouseLeftButtonDown="b_100_34_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s3" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_33" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,76,0,0" Grid.Row="1" PreviewMouseLeftButtonDown="b_100_33_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s4" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_29" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,678,0,0" Grid.RowSpan="2" PreviewMouseLeftButtonDown="b_100_29_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s5" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_30" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,678,0,0" Grid.RowSpan="2" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_30_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s6" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_31" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,678,0,0" Grid.RowSpan="2" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_31_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s7" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_32" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,678,0,0" Grid.RowSpan="2" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_32_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s8" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_28" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,599,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_28_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s9" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_27" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,599,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_27_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s10" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_26" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,600,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_26_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s11" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_25" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,599,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_25_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s12" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_21" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,517,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_21_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s13" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_22" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,518,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_22_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s14" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_23" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,518,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_23_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s15" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_20" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,435,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_20_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s16" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_19" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,436,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_19_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s17" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_18" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,436,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_18_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s18" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_17" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,436,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_17_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s19" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_13" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,357,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_13_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s20" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_14" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,357,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_14_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s21" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_15" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,358,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_15_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s22" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_16" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,358,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_16_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s23" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_12" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,281,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_12_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s24" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_8" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,200,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_8_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s25" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_7" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,200,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_7_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s26" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_6" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="133,200,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_6_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s27" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_9" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="49,281,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_9_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s28" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_10" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,282,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_10_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s29" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_11" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="213,282,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_11_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s30" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_5" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,200,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_5_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s31" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_1" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="51,123,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_1_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s32" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_2" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="132,123,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_2_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s33" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_3" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="214,123,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_3_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s34" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_4" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,123,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_4_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s35" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b_100_24" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="297,517,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b_100_24_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s36" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b100_k" BorderThickness="1" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="81" Margin="-23,631,0,0" RenderTransformOrigin="1.704,0.497" Grid.RowSpan="2" PreviewMouseLeftButtonDown="b100_k_PreviewMouseLeftButtonDown" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s37" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b100_ch" BorderThickness="1" HorizontalAlignment="Left" Width="81" Margin="-23,259,0,0" RenderTransformOrigin="1.704,0.497" PreviewMouseLeftButtonDown="b100_ch_PreviewMouseLeftButtonDown" Height="59" VerticalAlignment="Top" Cursor="Hand" Visibility="Hidden">
+            <Border.Background>
+                <ImageBrush ImageSource="poker_PNG4.png"/>
+            </Border.Background>
+            <Border x:Name="b3_s38" BorderBrush="White" BorderThickness="2" CornerRadius="60" Margin="16,4,16,3" Cursor="Hand" Visibility="Hidden" PreviewMouseLeftButtonDown="b3_s_PreviewMouseLeftButtonDown">
+                <Border.Effect>
+                    <DropShadowEffect Color="White" ShadowDepth="0" BlurRadius="8"/>
+                </Border.Effect>
+            </Border>
+        </Border>
+        <Border x:Name="b1_Copy1" BorderThickness="1" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="178" Margin="186,146,0,-26" CornerRadius="10" Background="#B2000000" Cursor="Hand" PreviewMouseLeftButtonDown="b1_Copy1_PreviewMouseLeftButtonDown_1" Grid.Row="1" BorderBrush="White">
+            <Label x:Name="l_ch_Copy1" Content="Подтвердить" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="178" Foreground="#DDFFFFFF" FontSize="26" Margin="-1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Border>
+        <Border x:Name="b1_Copy2" BorderThickness="1" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="178" Margin="-14,146,0,-26" CornerRadius="10" Background="#B2000000" Cursor="Hand"  Grid.Row="1" BorderBrush="White" PreviewMouseLeftButtonDown="b1_Copy2_PreviewMouseLeftButtonDown">
+            <Label x:Name="l_ch_Copy2" Content="Изменить" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="178" Foreground="#DDFFFFFF" FontSize="26" Margin="-1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Border>
+        <Border x:Name="bss" BorderThickness="1" HorizontalAlignment="Left" Height="710" VerticalAlignment="Top" Width="398" Margin="-20,113,0,0" Grid.RowSpan="2" Background="#26000000" CornerRadius="10" Visibility="Hidden"/>
+        <Label x:Name="l_viig" Content="Вы выиграли!" Margin="426,522,-734,31" FontSize="50" Foreground="#FF70DE7A" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Border x:Name="n5_5_Copy" BorderBrush="White" BorderThickness="5" HorizontalAlignment="Left" Height="220" Margin="668,308,-483,0" VerticalAlignment="Top" Width="220" Visibility="Hidden">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="1"/>
+            </Border.Effect>
+            <Label x:Name="n37" Content="5" FontSize="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#99FF0000" Foreground="#DDFFFFFF" Padding="0,0,4,0" Margin="-1"/>
+        </Border>
+        <Label x:Name="l_proig" Content="Вы проиграли!" Margin="426,522,-734,31" FontSize="50" Foreground="#FFEA411C" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="l_chislo1" Content="Выпало число:" Margin="426,174,-734,379" FontSize="50" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="l_chislo1_Copy" Content="Cтавки не выбраны!" Margin="426,406,-734,147" FontSize="45" Foreground="#FFFF4242" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="l_chislo1_Copy1" Content="Недостаточно средств!" Margin="426,406,-734,147" FontSize="45" Foreground="#FFFF4242" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+
+    </Grid>
+</Window>
+  
+        

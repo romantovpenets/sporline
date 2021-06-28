@@ -1,0 +1,734 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:БК_СПОРТЛАЙН"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:local1="clr-namespace:БК_СПОРТЛАЙН;assembly=БК_СПОРТЛАЙН" x:Class="БК_СПОРТЛАЙН.WindowSport"
+        mc:Ignorable="d"
+        Title="Window5" Height="1080" Width="1920" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" WindowState="Maximized" GotFocus="Window_GotFocus" Activated="Window_Activated" MouseEnter="Window_MouseEnter">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Window.Template>
+        <ControlTemplate TargetType="{x:Type Window}">
+            <Border x:Name="newBorder" CornerRadius="0" Opacity="1">
+                <Border.Background>
+                    <ImageBrush ImageSource="rozovyj-czvet-krasivye-kartinki-3-1.jpg" Opacity="1"/>
+                </Border.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!--Заголовок-->
+
+                    <!--Основное содержание-->
+                    <Border Grid.Row="1">
+                        <AdornerDecorator>
+                            <ContentPresenter />
+                        </AdornerDecorator>
+                    </Border>
+                    <!--Элемент захвата и изменения размера - работает только для прямоугольных окон-->
+                    <ResizeGrip Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                            Visibility="Collapsed" IsTabStop="False" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
+
+    <Grid Margin="0,2,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"/>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="184*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderThickness="1" Grid.ColumnSpan="3" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="1038" VerticalAlignment="Top" Panel.ZIndex="-3">
+            <Rectangle Fill="#7F000000" Height="164" Margin="-1.333,-4.333,-1.333,0" VerticalAlignment="Top"/>
+        </Border>
+        <Label Content="SportLine" VerticalAlignment="Top" Height="114" Background="{x:Null}" FontSize="80" Margin="4,-11,3,0" RenderTransformOrigin="0.5,0.5" Grid.Column="1" HorizontalAlignment="Center" Width="776" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown" Cursor="Hand" FontFamily="Algerian" HorizontalContentAlignment="Center">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.362"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#7FFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Номер счета:" VerticalAlignment="Top" Margin="98,15,0,0" Height="42" FontSize="20" HorizontalAlignment="Left" Width="262" Grid.Column="2" FontFamily="Yu Gothic UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#CCFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Баланс:" VerticalAlignment="Top" Margin="98,47,0,0" Height="42" FontSize="20" HorizontalAlignment="Left" Width="262" Grid.Column="2" FontFamily="Yu Gothic UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#CCFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="ll" Content="000000" VerticalAlignment="Top" Margin="268,15,0,0" Height="42" FontSize="20" Grid.Column="2" FontFamily="Yu Gothic UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#CCFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lll" Content="999.99" VerticalAlignment="Top" Margin="268,47,-2,0" Height="42" FontSize="20" Grid.Column="2" FontFamily="Yu Gothic UI Light">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#CCFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="vremya" Content="" VerticalAlignment="Top" FontSize="20" Height="103" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#B2FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Border BorderThickness="1" Height="3" VerticalAlignment="Top" Margin="0,103,0,0" Grid.ColumnSpan="3" BorderBrush="#4CB99FC1" Background="#4CB99FC1"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="3" Margin="0,-2,0,0" Background="#4CB99FC1" BorderBrush="#4CB99FC1" Grid.Column="1"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="3" Margin="0,-2,0,0" Background="#4CB99FC1" BorderBrush="#4CB99FC1" Grid.Column="2"/>
+        <Border BorderThickness="1" Height="3" VerticalAlignment="Top" Margin="0,159,0,0" Grid.ColumnSpan="3" BorderBrush="#4CB99FC1" Background="#50B99FC1"/>
+        <Button x:Name="sport" Content="СПОРТ" VerticalAlignment="Top" Margin="0,106,0,0" Height="53" BorderThickness="1,0" Background="#4C000000" BorderBrush="{x:Null}" FontSize="26" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" MouseEnter="sport_MouseEnter" MouseLeave="sport_MouseLeave"/>
+        <Button x:Name="cyber" Content="КИБЕРСПОРТ" VerticalAlignment="Top" Grid.Column="2" Margin="0,106,0,0" Height="53" BorderBrush="{x:Null}" Background="#4C000000" FontSize="26" FontFamily="Yu Gothic UI Light" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave"/>
+        <Button Content="LIVE" VerticalAlignment="Top" Margin="0,106,0,0" Height="53" Grid.Column="1" BorderBrush="{x:Null}" Background="#4C000000" FontSize="26" FontFamily="Yu Gothic UI Light"/>
+        <ListBox x:Name="sportlist" Margin="7,159,1,0" ScrollViewer.VerticalScrollBarVisibility="Hidden"  BorderBrush="{x:Null}" BorderThickness="0.6" Background="{x:Null}" Foreground="{x:Null}" Panel.ZIndex="5" HorizontalAlignment="Center" MouseEnter="sportlist_MouseEnter" MouseLeave="sportlist_MouseLeave" Height="629" VerticalAlignment="Top" FontFamily="Yu Gothic UI Light" FontSize="14" Width="382" ScrollViewer.CanContentScroll="False" Visibility="Hidden" Grid.RowSpan="2">
+            <Button Background="#7F843AB7" Width="360" Content="Футбол" BorderBrush="#FFB1A4C9" Click="Button_Click_26" />
+            <Button Background="#7F843AB7" Width="360" Content="Теннис" BorderBrush="#FFB1A4C9" Click="Button_Click"/>
+            <Button Background="#7F843AB7" Width="360" Content="Баскетбол" BorderBrush="#FFB1A4C9" Click="Button_Click_2"/>
+            <Button Background="#7F843AB7" Width="360" Content="Хоккей" BorderBrush="#FFB1A4C9" Click="Button_Click_3"/>
+            <Button Background="#7F843AB7" Width="360" Content="Волейбол" BorderBrush="#FFB1A4C9" Click="Button_Click_4"/>
+            <Button Background="#7F843AB7" Width="360" Content="UFC" BorderBrush="#FFB1A4C9" Click="Button_Click_5"/>
+            <Button Background="#7F843AB7" Width="360" Content="Австралийский футбол" BorderBrush="#FFB1A4C9" Click="Button_Click_6"/>
+            <Button Background="#7F843AB7" Width="360" Content="Американский футбол" BorderBrush="#FFB1A4C9" Click="Button_Click_7"/>
+            <Button Background="#7F843AB7" Width="360" Content="Бадбинтон" BorderBrush="#FFB1A4C9" Click="Button_Click_8"/>
+            <Button Background="#7F843AB7" Width="360" Content="Бейсбол" BorderBrush="#FFB1A4C9" Click="Button_Click_9"/>
+            <Button Background="#7F843AB7" Width="360" Content="Бильярд" BorderBrush="#FFB1A4C9" Click="Button_Click_10"/>
+            <Button Background="#7F843AB7" Width="360" Content="Бокс" BorderBrush="#FFB1A4C9" Click="Button_Click_11"/>
+            <Button Background="#7F843AB7" Width="360" Content="Водное поло" BorderBrush="#FFB1A4C9" Click="Button_Click_12"/>
+            <Button Background="#7F843AB7" Width="360" Content="Гандбол" BorderBrush="#FFB1A4C9" Click="Button_Click_13"/>
+            <Button Background="#7F843AB7" Width="360" Content="Дартс" BorderBrush="#FFB1A4C9" Click="Button_Click_14"/>
+            <Button Background="#7F843AB7" Width="360" Content="Единаборства" BorderBrush="#FFB1A4C9" Click="Button_Click_15"/>
+            <Button Background="#7F843AB7" Width="360" Content="Настольный теннис" BorderBrush="#FFB1A4C9" Click="Button_Click_16"/>
+            <Button Background="#7F843AB7" Width="360" Content="Регби" BorderBrush="#FFB1A4C9" Click="Button_Click_17"/>
+            <Button Background="#7F843AB7" Width="360" Content="Флорбол" BorderBrush="#FFB1A4C9" Click="Button_Click_18"/>
+            <Button Background="#7F843AB7" Width="360" Content="Футзал" BorderBrush="#FFB1A4C9" Click="Button_Click_19"/>
+
+        </ListBox>
+        <Border x:Name="sportB" BorderThickness="1,0,1,1" Height="680" Margin="0,108,0,0" VerticalAlignment="Top" Background="#E50A0909" BorderBrush="#7FCABCCF" MouseEnter="sportB_MouseEnter" MouseLeave="sportB_MouseLeave" CornerRadius="15" Visibility="Hidden" Grid.RowSpan="2" Panel.ZIndex="3"/>
+        <ListBox x:Name="cyberlist" Margin="0,159,-2,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" BorderBrush="{x:Null}" BorderThickness="0.6" Background="{x:Null}" Foreground="{x:Null}" Panel.ZIndex="5" HorizontalAlignment="Center" MouseLeave="cyberlist_MouseLeave" Height="287" VerticalAlignment="Top" FontFamily="Yu Gothic UI Light" FontSize="48" Width="370" Grid.Column="2" MouseEnter="cyberlist_MouseEnter" ScrollViewer.CanContentScroll="False" Visibility="Hidden">
+            <Button Background="#7F843AB7" Width="350" Content="Counter-Strike" BorderBrush="#FFB1A4C9" Click="Button_Click_20" />
+            <Button Background="#7F843AB7" Width="350" Content="DOTA 2" BorderBrush="#FFB1A4C9" Click="Button_Click_21"/>
+            <Button Background="#7F843AB7" Width="350" Content="League of Legends" BorderBrush="#FFB1A4C9" Click="Button_Click_22"/>
+            <Button Background="#7F843AB7" Width="350" Content="Valorant" BorderBrush="#FFB1A4C9" Click="Button_Click_23"/>
+            <Button Background="#7F843AB7" Width="350" Content="Call of Duty" BorderBrush="#FFB1A4C9" Click="Button_Click_24"/>
+            <Button Background="#7F843AB7" Width="350" Content="FIFA" BorderBrush="#FFB1A4C9" Click="Button_Click_25"/>
+
+
+        </ListBox>
+        <Border x:Name="cyberB" BorderThickness="1,0,1,1" Height="348" Margin="0,106,0,0" VerticalAlignment="Top" Background="#E50A0909" BorderBrush="#7FCABCCF" CornerRadius="15" Grid.Column="2" MouseEnter="cyberB_MouseEnter" MouseLeave="cyberB_MouseLeave" Visibility="Hidden" Panel.ZIndex="3"/>
+        <Grid Margin="0,167,8,10" Grid.ColumnSpan="3"/>
+        <Border x:Name="bb11" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1848" VerticalAlignment="Top" Width="2885" Grid.ColumnSpan="3" Margin="-790,-705,-815,-345" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Background="#66FFFFFF" Visibility="Hidden">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.437"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+
+        <Border x:Name="bbbb" BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="1950" Margin="-492,-419,-718,-733" Grid.RowSpan="2" VerticalAlignment="Top" Width="2490" Visibility="Hidden" Background="#66FFFFFF" Panel.ZIndex="70"/>
+
+        <Grid Margin="0,159,-2,0" Grid.ColumnSpan="3" ContextMenuClosing="Grid_ContextMenuClosing">
+            <Grid x:Name="g1" HorizontalAlignment="Left" Height="300" Margin="77,71,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya1" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP1" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="{x:Null}" FontFamily="Yu Gothic UI Light">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP1" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                    <Label.Effect>
+                        <DropShadowEffect BlurRadius="6" ShadowDepth="1" Opacity="0"/>
+                    </Label.Effect>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne1" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne1_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto1" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto1_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo1" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" PreviewMouseLeftButtonDown="KfPTwo1_PreviewMouseLeftButtonDown" Cursor="Hand"/>
+            </Grid>
+            <Border BorderBrush="#3FFFFFFF" BorderThickness="2" HorizontalAlignment="Left" Height="762" VerticalAlignment="Top" Width="1902" Margin="10,22,0,0" CornerRadius="10" Background="#8C000000" Panel.ZIndex="-1"/>
+            <Grid x:Name="g2" HorizontalAlignment="Left" Height="300" Margin="450,71,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya2" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP2" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP2" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne2" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne2_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto2" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto2_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo2" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo2_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g3" HorizontalAlignment="Left" Height="300" Margin="824,71,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya3" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP3" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP3" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne3" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne3_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto3" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto3_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo3" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo3_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g4" HorizontalAlignment="Left" Height="300" Margin="1194,71,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+                </Border>
+                <Label x:Name="vremya4" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP4" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP4" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,176,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne4" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne4_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto4" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto4_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo4" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo4_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g5" HorizontalAlignment="Left" Height="300" Margin="1560,71,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya5" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP5" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,54,-1,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP5" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne5" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne5_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto5" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto5_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo5" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo5_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g6" HorizontalAlignment="Left" Height="300" Margin="77,431,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+                </Border>
+                <Label x:Name="vremya6" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP6" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP6" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne6" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne6_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto6" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto6_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo6" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo6_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g7" HorizontalAlignment="Left" Height="300" Margin="450,431,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+                </Border>
+                <Label x:Name="vremya7" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP7" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-1,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP7" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne7" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne7_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto7" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto7_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo7" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo7_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g8" HorizontalAlignment="Left" Height="300" Margin="824,431,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+                </Border>
+                <Label x:Name="vremya8" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP8" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,47,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP8" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne8" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne8_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto8" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto8_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo8" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo8_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g9" HorizontalAlignment="Left" Height="300" Margin="1194,431,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya9" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP9" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP9" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne9" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne9_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto9" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto9_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo9" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo9_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="g10" HorizontalAlignment="Left" Height="300" Margin="1560,431,0,0" VerticalAlignment="Top" Width="300">
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Border BorderBrush="#B2EBCDFF" BorderThickness="1,35,1,50" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
+                    <Border.Background>
+                        <ImageBrush ImageSource="depositphotos_18770841-stock-photo-abstract-purple-background-or-fabric.jpg" Opacity="0.3"/>
+                    </Border.Background>
+
+                </Border>
+                <Label x:Name="vremya10" Content="3 мая 12:34" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="300" Foreground="#DD000000" FontSize="20" FontFamily="Yu Gothic UI" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label x:Name="teamOneP10" Content="TEAMONE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="vs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,109,0,0" Height="52" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label x:Name="teamTwoP10" Content="TEAMTWO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,167,0,0" Height="64" Width="300" FontSize="40" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                    <Label.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF878787" Offset="0"/>
+                            <GradientStop Color="#FF6E6E6E" Offset="1"/>
+                            <GradientStop Color="#FFDAD9D9" Offset="0.653"/>
+                            <GradientStop Color="#FFAEABAB" Offset="0.347"/>
+                            <GradientStop Color="#FFECECEC" Offset="0.493"/>
+                        </LinearGradientBrush>
+                    </Label.Foreground>
+                </Label>
+                <Label Content="П1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label Content="П2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="40" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDFFFFFF"/>
+                <Label x:Name="KfPOne10" Content="33.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="58" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPOne10_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPNikto10" Content="9.1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPNikto10_PreviewMouseLeftButtonDown"/>
+                <Label x:Name="KfPTwo10" Content="1.2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240,251,0,0" FontSize="18" FontFamily="Yu Gothic UI" Width="59" BorderBrush="Red" Height="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#CC000000" Foreground="#DDECA4F3" Cursor="Hand" PreviewMouseLeftButtonDown="KfPTwo10_PreviewMouseLeftButtonDown"/>
+            </Grid>
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="206" Margin="694,809,0,0" CornerRadius="10">
+                <Border.Background>
+                    <ImageBrush ImageSource="depositphotos_26840587-stock-illustration-purple-seamless-pattern.jpg" Opacity="0.7"/>
+                </Border.Background>
+                <Label Content="Предыдущая" Foreground="#DDFFFFFF" FontSize="30" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_2" Cursor="Hand"/>
+            </Border>
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="206" Margin="1022,809,0,0" CornerRadius="10">
+                <Border.Background>
+                    <ImageBrush ImageSource="depositphotos_26840587-stock-illustration-purple-seamless-pattern.jpg" Opacity="0.7"/>
+                </Border.Background>
+                <Label Content="Следующая" Foreground="#DDFFFFFF" FontSize="30" FontFamily="Yu Gothic UI Light" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Cursor="Hand" PreviewMouseLeftButtonDown="Label_PreviewMouseLeftButtonDown_1"/>
+            </Border>
+        </Grid>
+
+        <Label x:Name="l1" Content="Дата операции" VerticalAlignment="Top" Margin="388,466,0,0" FontSize="16" Foreground="#DDFFFFFF" Panel.ZIndex="2" FontFamily="Yu Gothic UI Light" HorizontalAlignment="Left" Width="121" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Label x:Name="l2" Content="Карта " VerticalAlignment="Top" Margin="172,466,282,0" FontSize="16" Foreground="#DDFFFFFF" Panel.ZIndex="2" FontFamily="Yu Gothic UI Light" Grid.Column="1" Visibility="Hidden"/>
+        <Label x:Name="l4" Content="Вид операции" VerticalAlignment="Top" Margin="421,466,357,0" FontSize="16" Foreground="#DDFFFFFF" Panel.ZIndex="2" FontFamily="Yu Gothic UI Light" Grid.Column="1" Grid.ColumnSpan="2" Background="{x:Null}" Visibility="Hidden"/>
+        <Label x:Name="l3" Content="Сумма" VerticalAlignment="Top" Margin="0,466,348,0" FontSize="16" Foreground="#DDFFFFFF" Panel.ZIndex="2" FontFamily="Yu Gothic UI Light" HorizontalAlignment="Right" Width="75" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Background="{x:Null}" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.106"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.123"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="sport_Copy" Content="СПОРТ" VerticalAlignment="Top" Margin="0,106,0,0" Height="53" BorderThickness="1,0" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="26" FontFamily="Yu Gothic UI Light" HorizontalContentAlignment="Center" MouseEnter="sport_MouseEnter" MouseLeave="sport_MouseLeave" Panel.ZIndex="123" Click="sport_Copy_Click"/>
+        <Button x:Name="cyber_Copy" Content="КИБЕРСПОРТ" VerticalAlignment="Top" Grid.Column="2" Margin="0,106,0,0" Height="53" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="26" FontFamily="Yu Gothic UI Light" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Panel.ZIndex="123" Click="cyber_Copy_Click"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Grid.Column="2" Margin="3,10,0,0" Height="88" BorderBrush="{x:Null}" Click="Button_Click_1" Panel.ZIndex="1">
+            <Button.Background>
+                <ImageBrush ImageSource="klipartz.com.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="82" Grid.Column="2" Margin="8,15,0,0" CornerRadius="90">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF804D9C" Offset="0"/>
+                    <GradientStop Color="#B2FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderThickness="2" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="77" Grid.Column="2" Margin="10,18,0,0" CornerRadius="90" Panel.ZIndex="1">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF423C3C" Offset="0"/>
+                    <GradientStop Color="#FF4F4F4F" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+        </Border>
+        <Border x:Name="bluuur" BorderBrush="#63FFFFFF" BorderThickness="1" HorizontalAlignment="Left" Height="1078" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="3" Background="#66FFFFFF" Panel.ZIndex="102" Visibility="Hidden"/>
+
+
+    </Grid>
+
+
+
+</Window>

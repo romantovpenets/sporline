@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="БК_СПОРТЛАЙН.exe" version="1.0.0.1" publicKeyToken="b87f42f0ba037703" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="БК_СПОРТЛАЙН" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="БК_СПОРТЛАЙН.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Castle.Core.dll" size="434688">
+      <assemblyIdentity name="Castle.Core" version="4.0.0.0" publicKeyToken="407DD0808D44FBDC" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>F5Ynenqp8qmDXAcNKP7USzYUyiIaLBr/whpMTkEZTD8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4991352">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/0K8pwRgXhh6u0VSOGixUSjWrxworUCkV51QfTSpU7I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="591752">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qWDdTS8PN7PAn/uVZ8MkJrh5ExDX65NcBMgZw9Rr1J4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FakeItEasy.dll" size="300544">
+      <assemblyIdentity name="FakeItEasy" version="7.0.0.0" publicKeyToken="EFF28E2146D5FD2C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Subc1qQIfxzsQoflLmuy7OGZPgO8tNQqJxF4wCUE7iw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialDesignColors.dll" size="302080">
+      <assemblyIdentity name="MaterialDesignColors" version="2.0.0.2422" publicKeyToken="DF2A72020BD7962A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n6OBl+7Vyh+sLQVvz9J2enRki8g2cl0lVHeyUVZ7rbY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialDesignThemes.Wpf.dll" size="8171520">
+      <assemblyIdentity name="MaterialDesignThemes.Wpf" version="4.0.0.2422" publicKeyToken="DF2A72020BD7962A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>myTnN3zwPtk812xOETMOLGfMQuKHWpf6ULmgNqAF910=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="БК_СПОРТЛАЙН.exe" size="32150512">
+      <assemblyIdentity name="БК_СПОРТЛАЙН" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LhTccWycOnbC8DNWpec/srOgKN+qzLO/1qg39eEcbnM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="БК_СПОРТЛАЙН.exe.config" size="1086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9E0skbXLmnyCtlFtEhNgVplMU2irmE8dqal+mxiMzqI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-0G6AU5C\5element" issuerKeyHash="c974624747931a6d125cd1d73431001221df67e6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>nJJ9n2+svIt2xuc1YlDWU2DgZNtDqC0/aAp5YFmX6ow=</DigestValue></Reference></SignedInfo><SignatureValue>AF480Sok6/L8BtE8tz1gcmjYtzOJuro0C32+k0FZ9htsrL1QYrdIXh7JRqjJfweHFyzozhzj+JO2sz6GcXPbTnGf1tPPZgUfJY7AAtDxHRsac2xQ9uXdvatJtIGAWUt0S1Z/goa6ewyLt1dBI0p8SVqxkl0m1ZbxPni19daIpvY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>w7kNPxH5ciR4hRNCxxh86YjHwmBcObK4CpvKziYk2sKgOGkwahKADY95pXJwNbFaz+aezNHB2zxn1kv33DE9+wgFL3HkSKzpS/H+dTo63tfmf1RKvT4c6JrmL6n7ZEqTfv3sY4YlllhR7iUIC7r6DWOskmT8Nk2RFUqN3HOCD2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8cea975960790a683f2da843db64e06053d6506235e7c6768bbcac6f9f7d929c" Description="" Url=""><as:assemblyIdentity name="БК_СПОРТЛАЙН.exe" version="1.0.0.1" publicKeyToken="b87f42f0ba037703" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-0G6AU5C\5element</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>R6RECk9fykpB5IAgV9CnoTVWKBaYWE08ZypYPtdIZn4=</DigestValue></Reference></SignedInfo><SignatureValue>ZLZmYB5e44SLmLYwaQGuUqVH4J5lht050ydQJOVVmpA8o4KqimLm5vU6rkwS+sDpMmRM0Ao+Hbo9VaxGOt4Sq6c2925Rf5Z+d/lIVEK2aNaV/T3qvpV7rVMAkxo3WTptw8RlaZ4/lpmcBwKs929xyJml9zU2QEfGImsc7+rVBCw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>w7kNPxH5ciR4hRNCxxh86YjHwmBcObK4CpvKziYk2sKgOGkwahKADY95pXJwNbFaz+aezNHB2zxn1kv33DE9+wgFL3HkSKzpS/H+dTo63tfmf1RKvT4c6JrmL6n7ZEqTfv3sY4YlllhR7iUIC7r6DWOskmT8Nk2RFUqN3HOCD2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQbPIdtWHwuIhMoCPPtFD7/TANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtADAARwA2AEEAVQA1AEMAXAA1AGUAbABlAG0AZQBuAHQwHhcNMjEwNTI3MDkxMTQwWhcNMjIwNTI3MTUxMTQwWjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtADAARwA2AEEAVQA1AEMAXAA1AGUAbABlAG0AZQBuAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMO5DT8R+XIkeIUTQscYfOmIx8JgXDmyuAqbys4mJNrCoDhpMGoSgA2PeaVycDWxWs/mnszRwds8Z9ZL99wxPfsIBS9x5Eis6Uvx/nU6Ot7X5n9USr0+HOia5i+p+2RKk3797GOGJZZYUe4lCAu6+g1jrJJk/DZNkRVKjdxzgg9pAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAMsSCrz1xe5m3k1aMr7MQyl9PvFUBkcHWM1F6t46mgyttMo/yBwvbEAzd1On2kAZ9AIe9JO6Le7qmiEcXu+PHXkKZydApkcm8dvHvlEdfpMAM2Jwsc178Gfa8GUx7o5nho0HHHOPvLNLMD+FBQaF7ozdA6gJ0mjUSp4MGpwJ/TDQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
